@@ -24,7 +24,6 @@ y_data = np.array([40, 30, 25, 40, 18, 20, 22, 15])
 x_vals = np.linspace(5, 40, 100)
 y_vals = [lagrange_interpolation(x_data, y_data, x) for x in x_vals]
 
-
 plt.plot(x_data, y_data, 'o', label='Data points')
 plt.plot(x_vals, y_vals, '-', label='Lagrange interpolation')
 plt.xlabel('Tegangan (kg/mm^2)')
